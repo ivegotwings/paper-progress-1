@@ -159,6 +159,23 @@ Custom property                                  | Description                  
       #secondaryProgress {
         background: var(--paper-progress-secondary-color, var(--google-green-100));
       }
+      
+      #secondaryProgress {
+        background-color: #a5df41;
+        background-image: linear-gradient(top, #a5df41, #4ca916);  
+      }
+      
+      #secondaryProgress {
+          background-size: 30px 30px;
+          background-image: linear-gradient(135deg, rgba(255, 255, 255, .35) 25%, transparent 25%,
+                              transparent 50%, rgba(255, 255, 255, .35) 50%, rgba(255, 255, 255, .50) 75%,
+                              transparent 75%, transparent);            
+          
+          animation: animate-stripes 3s linear infinite;  
+          -webkit-animation: animate-stripes 3s linear infinite;
+          -moz-animation:    animate-stripes 3s linear infinite;
+          -o-animation:      animate-stripes 3s linear infinite;           
+      }
 
       :host([disabled]) #primaryProgress {
         background: var(--paper-progress-disabled-active-color, var(--google-grey-500));
